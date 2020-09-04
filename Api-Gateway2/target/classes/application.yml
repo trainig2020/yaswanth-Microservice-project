@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: Department-Service
+          uri: lb://Department-Service
+          predicates:
+            - Path=/Department/**
+          
+server:
+  port : 8877
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
