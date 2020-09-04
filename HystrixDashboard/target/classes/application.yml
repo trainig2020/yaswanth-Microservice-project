@@ -1,0 +1,12 @@
+#hystrix.dashboard.proxy-stream-allow-list=*
+#mangement.security.enabled=false
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+
+server:
+  port: 8887
+  
+management:
+   security:
+      enabled: false
